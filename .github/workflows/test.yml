@@ -6,10 +6,15 @@ on: # rebuild any PRs and main branch changes
             - master
 
 jobs:
-    prod: # tests production deployer
+    deployer: # tests production deployer
         runs-on: ubuntu-latest
         name: a job to try deploying the repo in various places
         steps:
             - name: production
               id: production
               uses: mshanemc/deployer-check-javascript-action@master
+            - name: prerelease
+              id: prerelease
+              uses: mshanemc/deployer-check-javascript-action@master
+              with:
+                  deployer-url: https://deployer-prerelease.herokuapp.com
