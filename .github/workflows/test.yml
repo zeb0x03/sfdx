@@ -9,6 +9,6 @@ jobs:
     prod: # tests production deployer
         runs-on: ubuntu-latest
         steps:
-            - name: production
+            name: production
             id: production
             uses: mshanemc/deployer-check-javascript-action
