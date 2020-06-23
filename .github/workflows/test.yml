@@ -8,14 +8,14 @@ on: # rebuild any PRs and main branch changes
 jobs:
     production:
         runs-on: ubuntu-latest
-        name: tests on the production deployer
+        name: production deployer end-to-end test
         steps:
            - name: production
               id: production
               uses: mshanemc/deployer-check-javascript-action@master
     prerelease: # tests production deployer
         runs-on: ubuntu-latest
-        name: tests on the prerelease deployer
+        name: prerelease deployer end-to-end test
         steps:           
             - name: prerelease
               id: prerelease
