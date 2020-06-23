@@ -1,0 +1,14 @@
+name: 'deployer-test'
+on: # rebuild any PRs and main branch changes
+    pull_request:
+    push:
+        branches:
+            - master
+
+jobs:
+    prod: # tests production deployer
+        runs-on: ubuntu-latest
+        steps:
+            - name: production
+            id: production
+            uses: mshanemc/deployer-check-javascript-action
