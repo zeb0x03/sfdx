@@ -10,13 +10,13 @@ jobs:
         runs-on: ubuntu-latest
         name: production deployer end-to-end test
         steps:
-           - name: production
+            - name: production
               id: production
               uses: mshanemc/deployer-check-javascript-action@master
     prerelease: # tests production deployer
         runs-on: ubuntu-latest
         name: prerelease deployer end-to-end test
-        steps:           
+        steps:
             - name: prerelease
               id: prerelease
               uses: mshanemc/deployer-check-javascript-action@master
