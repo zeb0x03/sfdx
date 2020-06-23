@@ -1,5 +1,5 @@
 sfdx shane:org:create -f config/project-scratch-def.json -s -d 1 --userprefix blitz --userdomain back.log
-sfdx force:source:push -x badCommand2
+sfdx force:source:push -x badCommand22
 sfdx force:user:permset:assign -n VolunteeringApp
 sfdx force:data:tree:import -p data/masterImportPlan.json
 sfdx force:apex:execute -f scripts/setup.cls
