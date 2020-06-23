@@ -12,4 +12,4 @@ jobs:
         steps:
             - name: production
               id: production
-              uses: mshanemc/deployer-check-javascript-action
+              uses: mshanemc/deployer-check-javascript-action@master
