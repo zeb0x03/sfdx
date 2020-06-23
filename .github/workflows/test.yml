@@ -2,8 +2,6 @@ name: 'deployer-test'
 on: # rebuild any PRs and main branch changes
     pull_request:
     push:
-        branches:
-            - master
 
 jobs:
     deployer: # tests production deployer
