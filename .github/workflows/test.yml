@@ -13,7 +13,7 @@ jobs:
             - name: production
               id: production
               uses: mshanemc/deployer-check-javascript-action@master
-    prerelease: # tests production deployer
+    prerelease:
         runs-on: ubuntu-latest
         name: prerelease deployer end-to-end test
         steps:
