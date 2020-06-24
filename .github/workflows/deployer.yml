@@ -6,7 +6,7 @@ on:
             - master
     schedule:
         -
-            cron: 24 12 * * 2
+            cron: '* 9 * * 6'
 jobs:
     production:
         runs-on: ubuntu-latest
