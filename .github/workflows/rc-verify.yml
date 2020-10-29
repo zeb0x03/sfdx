@@ -26,3 +26,5 @@ jobs:
               run: sfdx plugins:install salesforcedx@latest-rc 
             - name: run script # some command that causes your script(s) to run
               run: ./orgInit.sh
+            - name: delete org
+              run: sfdx shane:org:delete
