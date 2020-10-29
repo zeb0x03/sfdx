@@ -20,6 +20,8 @@ jobs:
                   ./sfdx/install
                   echo ${{ secrets.DEV_HUB_SFDXURL }} > sfdx_auth
                   sfdx force:auth:sfdxurl:store -f sfdx_auth -d
+            - name: install plugins
+              run: echo y | sfdx plugins:install shane-sfdx-plugins
             - name: update to rc
               run: sfdx plugins:install salesforcedx@latest-rc 
             - name: run script # some command that causes your script(s) to run
