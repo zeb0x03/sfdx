@@ -1,1 +1,1 @@
-sfdx shane:org --help
+sfdx shane:org
