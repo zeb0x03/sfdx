@@ -1,1 +1,1 @@
-sfdx shane:org
+sfdx alias list
