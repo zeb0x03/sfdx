@@ -1,1 +1,1 @@
-sfdx plugins
+sfdx shane:org --help
