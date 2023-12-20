@@ -1,3 +1,4 @@
+sfdx shane --help
 sfdx shane:org:create -f config/project-scratch-def.json -s -d 1 --userprefix blitz --userdomain back.log
 sfdx force:source:push
 sfdx force:user:permset:assign -n VolunteeringApp
