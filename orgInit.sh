@@ -1,1 +1,1 @@
-sfdx env create compute
+sfdx force:org:list
